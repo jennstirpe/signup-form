@@ -25,11 +25,10 @@ body {
     background-image: url("../images/bg-intro-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
-    // background-size: cover;
     background-color: $red;
 }
 
-main {
+.card {
     width: 23rem;
     text-align: center;
     color: #fff;
@@ -55,7 +54,6 @@ header {
 
 
 .trial-desc {
-    padding: 1.25rem .5rem;
     background-color: $blue;
     border-radius: .75rem;
     box-shadow: 0rem .62rem rgba(0, 0, 0, 0.164);
@@ -65,9 +63,11 @@ header {
     margin: 0 .5rem;
 
     .pricing {
+        padding: 1.5rem 2rem;
         font-weight: 400;
         color: $grayish-blue;
         line-height: 1.75rem;
+        font-size: 1.2rem;
 
         span {
             font-weight: 600;
@@ -130,6 +130,65 @@ header {
         }
     }
 }
+
+
+
+
+@media only screen and (min-width: 1440px) {
+    body {
+        height: 100vh;
+        background-image: url("../images/bg-intro-desktop.png");
+        background-size: cover;
+    }
+
+    .card {
+        width: 68rem;
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        width: 34rem;
+        text-align: left;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin: 1.5rem 0;
+        }
+    
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.75rem;
+        }
+    }
+
+    .trial-card {
+        width: 34rem;
+
+        .pricing {
+            font-size: 1rem;
+        }
+
+        .form-area {
+            margin-top: 1.5rem;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
