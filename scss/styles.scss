@@ -11,14 +11,125 @@ $grayish-blue: hsl(246, 25%, 77%);
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg-intro-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: $red;
+}
+
+main {
+    width: 23rem;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    margin: 4.5rem .5rem;
+    padding-top: 1rem;
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.93rem;
+        line-height: 2.5rem;
+        margin: 1.5rem 0;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2rem;
+    }
 }
 
 
+.trial-desc {
+    padding: 1.25rem .5rem;
+    background-color: $blue;
+    border-radius: .75rem;
+    box-shadow: 0rem .62rem rgba(0, 0, 0, 0.164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .5rem;
 
+    .pricing {
+        font-weight: 400;
+        color: $grayish-blue;
+        line-height: 1.75rem;
+
+        span {
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+.form-area {
+    margin: 1.75rem .5rem;
+    padding: 1.25rem;
+    background-color: #fff;
+    border-radius: .75rem;
+    box-shadow: 0rem .62rem rgba(0, 0, 0, 0.164);
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input, button {
+            height: 3.75rem;
+            margin: .6rem;
+            border-radius: .3rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input {
+            border: 1px solid rgb(222, 222, 222);
+            padding: 1rem;
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 1rem;
+                letter-spacing: .1px;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: $green;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .15px;
+            box-shadow: 0rem .25rem rgb(44, 185, 130);
+        }
+    }
+
+    .disclaimer {
+        color: $grayish-blue;
+        font-size: .75rem;
+        line-height: 1.25rem;
+        margin: .5rem 2rem;
+
+        span {
+            color: $red;
+            font-weight: 700;
+        }
+    }
+}
 
 
 
