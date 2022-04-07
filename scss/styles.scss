@@ -1,7 +1,36 @@
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+$blue: hsl(248, 32%, 49%);
+
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
 }
