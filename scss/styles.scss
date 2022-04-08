@@ -98,13 +98,49 @@ header {
         input {
             border: 1px solid rgb(222, 222, 222);
             padding: 1rem;
+            color: $dark-blue;
+            font-size: 1rem;
 
             &::placeholder {
                 font-weight: 600;
                 font-size: 1rem;
                 letter-spacing: .1px;
             }
+
+            &:focus {
+                outline: none;
+                border: 1px solid $dark-blue;
+            }
         }
+
+        .error {
+            border: 3px solid $red;
+            margin-bottom: .2rem;
+        }
+
+        .error-message {
+            position: relative;
+            display: none;
+
+            p {
+            color: $red;
+            font-size: .83rem;
+            margin-bottom: .4rem;
+            margin-right: .7rem;
+            text-align: right;
+            }
+
+            img {
+                position: absolute;
+                top: -2.75rem;
+                right: 2.5rem;
+            }
+        }
+
+        .show {
+            display: block;
+        }
+
 
         button {
             border: none;
@@ -115,6 +151,11 @@ header {
             font-weight: 500;
             letter-spacing: .15px;
             box-shadow: 0rem .25rem rgb(44, 185, 130);
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(116, 226, 182);
+            }
         }
     }
 
@@ -179,18 +220,6 @@ header {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

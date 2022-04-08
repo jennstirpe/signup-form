@@ -32,10 +32,26 @@
   
       <div class="form-area">
         <form>
-          <input type="text" id="firstName" placeholder="First Name">
-          <input type="text" id="lastName" placeholder="Last Name">
-          <input type="email" id="email" placeholder="Email Address">
+          <input type="text"  id="firstName" placeholder="First Name">
+          <div class="error-message">
+            <p>First Name cannot be empty</p>
+            <img src="images/icon-error.svg" alt="Error">
+          </div>
+          <input type="text"  id="lastName" placeholder="Last Name">
+          <div class="error-message">
+            <p>Last Name cannot be empty</p>
+            <img src="images/icon-error.svg" alt="Error">
+          </div>
+          <input type="email"  id="email" placeholder="Email Address">
+          <div class="error-message">
+            <p>Email cannot be empty</p>
+            <img src="images/icon-error.svg" alt="Error">
+          </div>
           <input type="password" id="pwd" placeholder="Password">
+          <div class="error-message">
+            <p>Password cannot be empty</p>
+            <img src="images/icon-error.svg" alt="Error">
+          </div>
           <button type="submit" id="submit">Claim your free trial</button>
         </form>
     
