@@ -21,7 +21,7 @@ submitBtn.addEventListener("click", (e) => {
         email.nextElementSibling.classList.add("show");
     } else if (!email.value.match(emailFormat)) {
         const errMsg = email.nextElementSibling.firstChild.nextSibling;
-        errMsg.innerText = "Please enter a valid email address";
+        errMsg.innerText = "Looks like this is not an email";
         email.classList.add("error");
         email.nextElementSibling.classList.add("show");
     }
@@ -31,8 +31,6 @@ submitBtn.addEventListener("click", (e) => {
     }
 
 })
-
-console.log(email.nextElementSibling.firstChild.nextSibling.innerText);
 
 firstName.addEventListener("focus", () => {
     if (firstName.classList.contains("error")) {
