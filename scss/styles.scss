@@ -34,6 +34,10 @@ body {
     color: #fff;
 }
 
+
+
+/*      HEADER STYLES       */
+
 header {
     margin: 4.5rem .5rem;
     padding-top: 1rem;
@@ -52,6 +56,8 @@ header {
     }
 }
 
+
+/*      TRIAL INFO STYLES       */
 
 .trial-desc {
     background-color: $blue;
@@ -75,6 +81,9 @@ header {
         }
     }
 }
+
+
+/*      FORM STYLES       */
 
 .form-area {
     margin: 1.75rem .5rem;
@@ -113,6 +122,8 @@ header {
             }
         }
 
+        /*      ERROR HANDLING STYLES       */
+
         .error {
             border: 3px solid $red;
             margin-bottom: .2rem;
@@ -140,6 +151,7 @@ header {
         .show {
             display: block;
         }
+
 
 
         button {
@@ -174,6 +186,7 @@ header {
 
 
 
+/*      RESPONSIVE STYLES       */
 
 @media only screen and (min-width: 1440px) {
     body {
@@ -216,8 +229,6 @@ header {
             margin-top: 1.5rem;
         }
     }
-
-
 
 }
 

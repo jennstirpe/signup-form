@@ -1,8 +1,12 @@
+// INPUTS
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
 const email = document.querySelector("#email");
 const pwd = document.querySelector("#pwd");
 const submitBtn = document.querySelector("#submit");
+
+
+// CHECK FOR EMPTY INPUTS WHEN USER SUBMITS FORM
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -31,6 +35,10 @@ submitBtn.addEventListener("click", (e) => {
     }
 
 })
+
+
+
+// CLEAR ERROR MESSAGES WHEN USER ADDS MISSING INFO
 
 firstName.addEventListener("focus", () => {
     if (firstName.classList.contains("error")) {
